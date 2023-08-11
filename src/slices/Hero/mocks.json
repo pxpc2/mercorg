@@ -1,0 +1,63 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"titulo": {
+				"__TYPE__": "FieldContent",
+				"value": "naturally",
+				"type": "Text"
+			},
+			"titulocolorido": {
+				"__TYPE__": "FieldContent",
+				"value": "ill",
+				"type": "Text"
+			},
+			"subtitulo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Et elit nulla esse culpa aliqua et exercitation. Sit cupidatat ipsum sunt qui eu do."
+						}
+					}
+				]
+			},
+			"backgroundimage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+					"width": 6000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+				"width": 6000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"productsbuttontext": {
+				"__TYPE__": "FieldContent",
+				"value": "cheese",
+				"type": "Text"
+			},
+			"aboutbuttontext": {
+				"__TYPE__": "FieldContent",
+				"value": "anywhere",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

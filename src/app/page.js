@@ -1,9 +1,33 @@
-import Image from 'next/image';
+import { SliceZone } from '@prismicio/react';
+import * as prismic from '@prismicio/client';
 
-export default function Home() {
-  return (
-    <main>
-      <></>
-    </main>
-  );
+import { createClient } from '@/prismicio';
+import { components } from '@/slices';
+
+export async function generateMetadata() {
+  const client = createClient();
+  const home = await client.getByUID('page', 'home');
+
+  return {
+    title: prismic.asText(home.data.title),
+    description: home.data.meta_description,
+    openGraph: {
+      title: home.data.meta_title || undefined,
+      images: [
+        {
+          url: home.data.meta_image.url || '',
+        },
+      ],
+    },
+  };
+}
+
+export default async function Index() {
+  /**
+   * The client queries content from the Prismic API
+   */
+  const client = createClient();
+  const home = await client.getByUID('page', 'home');
+
+  return <SliceZone slices={home.data.slices} components={components} />;
 }
