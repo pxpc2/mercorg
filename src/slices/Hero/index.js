@@ -11,7 +11,7 @@ const Hero = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="py-12 bg-white relative shadow-md"
+      className="bg-white relative shadow-md"
     >
       <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-32 lg:text-left">
         <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
@@ -36,9 +36,9 @@ const Hero = ({ slice }) => {
             <div className="rounded-md shadow">
               <a
                 href="#"
-                className="w-full flex items-center justify-center px-8 py-3 
+                className="w-full flex items-center justify-center px-4 py-3 
                 border border-transparent text-base font-medium rounded-md text-white
-                 bg-orange-400 hover:bg-orange-500 md:py-4 md:text-lg md:px-10"
+                 bg-orange-400 hover:bg-orange-500 md:py-3 md:text-lg md:px-7"
               >
                 <>{slice.primary.productsbuttontext}</>
               </a>
@@ -46,10 +46,9 @@ const Hero = ({ slice }) => {
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 href="#"
-                className="w-full flex items-center justify-center px-8 py-3 
-                border border-transparent text-base font-medium rounded-md
-                 text-orange-500 bg-white hover:bg-slate-50 
-                 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-4 py-3 
+                border border-transparent text-base font-medium rounded-md text-orange-500
+                 bg-white hover:bg-slate-50 md:py-3 md:text-lg md:px-7"
               >
                 <>{slice.primary.aboutbuttontext}</>
               </a>
@@ -57,7 +56,10 @@ const Hero = ({ slice }) => {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <div
+        className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute
+       lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full"
+      >
         <PrismicNextImage field={slice.primary.backgroundimage} />
       </div>
     </section>
